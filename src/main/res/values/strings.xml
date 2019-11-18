@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kindofweather">Party Cloudy</string>
+    <string name="tempa">21C 22C</string>
+    <string name="Monday">Monday</string>
 </resources>

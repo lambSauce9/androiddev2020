@@ -13,15 +13,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class WeatherFragment extends Fragment {
 
+public class WeatherAndForecastFragment extends Fragment {
 
+    public WeatherAndForecastFragment() {
+        // Required empty public constructor
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View v = inflater.inflate(R.layout.fragment_weather, container, false);
+        View v = inflater.inflate(R.layout.fragment_weather_and_forecast,container,false);
         return v;
     }
+
+    public static WeatherAndForecastFragment newInstance() {
+        
+        Bundle args = new Bundle();
+        
+        WeatherAndForecastFragment fragment = new WeatherAndForecastFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
 }

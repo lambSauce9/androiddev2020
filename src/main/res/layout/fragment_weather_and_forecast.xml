@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WeatherAndForecastFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1ABC9C">
+
+
+        <TextView
+            android:id="@+id/tempa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/rainy"
+            android:text="@string/tempa"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ebf2ed"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/kindofweather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempa"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/rainy"
+            android:text="@string/kindofweather"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ebf2ed">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/rainy"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/rainny">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#ebf2ed">
+
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Tung"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".ForecastFragment">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/Monday"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#ebf2ed" />
+
+                <ImageView
+                    android:layout_width="144px"
+                    android:layout_height="144px"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/rainny"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/rainny" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kindofweather"
+                        android:textColor="#ebf2ed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/tempa"
+                        android:textColor="#ebf2ed" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

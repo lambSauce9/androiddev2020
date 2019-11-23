@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="Friday">Thứ sáu</string>
+    <string name="Monday">Thứ hai</string>
+    <string name="Saturday">Thứ bảy</string>
+    <string name="Sunday">Chủ nhật</string>
+    <string name="Thursday">Thứ năm</string>
+    <string name="Tuesday">Thứ ba</string>
+    <string name="Wednesday">Thứ tư</string>
+    <string name="kindofweather">Nhiều mây</string>
+    <string name="tempa">Nhiệt Độ</string>
+    <string name="city">Paris</string>
+    <string name="hello_blank_fragment">"Hello "</string>
+</resources>

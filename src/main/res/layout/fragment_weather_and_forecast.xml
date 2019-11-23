@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -62,9 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/Tung"
@@ -128,7 +127,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Tuesday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 
@@ -173,7 +172,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Wednesday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 
@@ -218,7 +217,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Thursday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 
@@ -263,7 +262,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Friday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 
@@ -308,7 +307,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Saturday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 
@@ -353,7 +352,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:layout_marginRight="30dp"
-                    android:text="@string/Monday"
+                    android:text="@string/Sunday"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                     android:textColor="#ebf2ed" />
 

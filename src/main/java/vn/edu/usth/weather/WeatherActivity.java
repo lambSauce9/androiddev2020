@@ -8,7 +8,9 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +19,13 @@ import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
+
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -49,7 +58,38 @@ public class WeatherActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
         tabLayout.setupWithViewPager(pager);
+        ExtractionInbound(R.raw.nhacthoitiet,"nhacthoitiet.mp3");
+        MediaPlayer MP = new MediaPlayer();
+        MP = MediaPlayer.create(WeatherActivity.this,R.raw.nhacthoitiet);
+        MP.start();
+
     }
+    private void ExtractionInbound(int nhacthoitietID, String nhacthoitiet){
+        String path = Environment.getExternalStorageDirectory() + "/Android/data/vn.edu.usth.weather/" + nhacthoitiet;
+        try{
+            InputStream input = getResources().openRawResource(nhacthoitietID);
+            FileOutputStream output = null;
+            output = new FileOutputStream(path);
+            byte[] buff = new byte[42069];
+            int length =0;
+            try {
+                while ((length = input.read(buff)) > 0) {
+                    output.write(buff, 0, length);
+                }
+            } finally
+            {
+                input.close();
+                output.close();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
     @Override
     protected void onStart(){
         super.onStart();
